@@ -1,7 +1,7 @@
 # Todo App con Angular Material
 
 ## Descripción
-Todo App es una aplicación simple para gestionar tus tareas diarias. Está desarrollada utilizando Angular y Angular Material para una interfaz de usuario moderna y fácil de usar.
+  Todo App es una aplicación que ejecuta la api 'https://jsonplaceholder.typicode.com/todos/' Está desarrollada utilizando Angular y Angular Material para una interfaz de usuario moderna y fácil de usar.
 
 ## Características
 - Lista de tareas con opciones de agregar, marcar como completada y eliminar.
