@@ -11,7 +11,8 @@ import { Task } from '../../interfaces/task';
 export class TodolistComponent {
   responseData: any;
   public tasks: Task[] = [];
- 
+  public isLoading = false;
+
   constructor(private taskservice: TaskService) {}
 
   ngOnInit(): void {
@@ -19,11 +20,11 @@ export class TodolistComponent {
   }
 
   getDataFromApi(): void {
+    this.isLoading = true;
     this.taskservice.getData().subscribe(
       (response) => {
         this.responseData = response;
         this.tasks =  this.responseData
-        console.log('Datos recibidos:', response);
       },
       (error) => {
         console.error('Error al obtener los datos:', error);

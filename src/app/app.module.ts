@@ -5,8 +5,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodolistComponent } from './tasks/pages/todolist/todolist.component';
 import { MatCardModule } from '@angular/material/card'; 
-
-import {HttpClientModule } from '@angular/common/http'
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'; 
+import {HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import {HttpClientModule } from '@angular/common/http'
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatProgressSpinnerModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
